@@ -1,16 +1,93 @@
-
-
-  h1 {
-    text-shadow: 2px 2px 5px rgb(243, 245, 243);
-    color: yellow;
-    background-color: teal;
-    font-size: 70px;
-  }
-
-  body {
-    background-color: rgb(43, 226, 171);
+body {
+   
     position:relative;
     font-size: 20px;
 }
+
+
+
+
+
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("images/1.jpeg");
+
+  /* Add the blur effect */
   
-    
+
+  /* Full height */
+  height: 107%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.glow {
+  font-family: "Ink Free";
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+
+
+
+h6{
+  font-size: 60px;
+  font-family: Impact;
+  font-style: normal;
+  
+}
+
+.container{
+  background-image: url(images/2.jpg);
+  background-position-x: 30%;
+  background-position-y: 20%;
+  
+  background-repeat: no-repeat;
+  background-size: 500px;
+  
+}
+
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
