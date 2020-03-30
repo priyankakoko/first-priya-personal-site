@@ -1,75 +1,66 @@
 body {
-  background-image: url(images/1.jpeg);
+  /* background-image: url(images/1.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-    position:relative;
-    font-size: 20px;
+    position:relative; */
+  font-size: 20px;
+  overflow-x: hidden;
 }
-
-
-
-
-
-body, html {
-  height: 100%;
+body,
+html {
+  scroll-behavior: smooth;
 }
-
-
-
-.bg-image {
-  /* The image used */
-  background-image: url("images/1.jpeg");
-
-  /* Add the blur effect */
-  
-
-  /* Full height */
-  height: 107%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
+.navbar-brand {
+  font-size: 1.5rem;
+}
+.navbar-brand span {
+  color: greenyellow;
+  font-weight: 600;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: greenyellow;
+  text-transform: lowercase;
+}
+#intro .col-sm-8 {
+  background-image: url(images/2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
+}
+#intro .col-sm-8 .overlay {
+  background-color: rgba(255, 255, 255, 0.342);
+  margin-top: 1rem;
+  border-radius: 5px;
 }
 
+#intro .col-sm-4 {
+  background: url(images/1.jpeg) no-repeat;
+}
 
-
+#intro .col-sm-4 a {
+  color: #fff;
+}
 .glow {
   font-family: "Ink Free";
   font-size: 50px;
-  color: #fff;
+  color: #212121;
   text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
-}
+  /* -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate; */ 
 
-@-webkit-keyframes glow {
+
+}
+@keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
   }
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
 }
-
-
-
-
-
-h6{
-  font-size: 60px;
+h3 {
   font-family: Impact;
-  font-style: normal;
-  
-}
-
-.container{
-  background-image: url(images/2.jpg);
-  background-position-x: 30%;
-  background-position-y: 20%;
-  
-  background-repeat: no-repeat;
-  background-size: 500px;
-  
 }
