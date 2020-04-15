@@ -9,7 +9,6 @@ body {
 body,
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 .navbar-brand {
   font-size: 1.5rem;
@@ -22,13 +21,10 @@ html {
 }
 .navbar-dark .navbar-nav .nav-link {
   color: greenyellow;
-  text-transform: initial;
-  
-  
+  text-transform: lowercase;
 }
-
 img{
-  
+  background-color: #343a40!important;
   height: 100px;
   width: 100px;
 }
@@ -56,7 +52,7 @@ img{
 .glow {
   font-family: "Ink Free";
   font-size: 50px;
-  color: #0a0a0a;
+  color: #faf5f5;
   text-align: center;
   animation: glow 1s ease-in-out infinite alternate;
   /* -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -79,9 +75,9 @@ h3 {
 }
 
 
-/*.container  {
+.container  {
   background-image: url(images/grass.jpg);
-}*/
+}
 
 
 body {font-family: Verdana, sans-serif;}
@@ -234,20 +230,18 @@ img {vertical-align: middle;}
 
 
 
-/*.container-fluid .col-md-3 {
- 
+.container-fluid .col-md-3 {
+  background-image: url(images/grass10.png); 
   background-repeat: no-repeat;
   background-size: 700px;
   background-position: center;
-}*/
+}
+
 .container-fluid .col-md-6 {
-  height: 705px;
+  background-image: url(images/bg.jpg);
   
   }
-  .container-fluid .col-md-3 {
-    height: 705px;
-    
-    }
+
 
 
 
@@ -257,40 +251,30 @@ img {vertical-align: middle;}
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid black;
-  background-color: black;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-  background-color: black;
-  float: inherit;
-  border: black;
-  outline: black;
+  background-color: rgb(244, 247, 242);;
+  float: left;
+  border: none;
+  outline: none;
   cursor: pointer;
-  padding: 15px 15px;
+  padding: 14px 16px;
   transition: 0.3s;
-  font-size: 20px;
-  overflow: visible;
-  color:rgb(233, 220, 220);
-  box-shadow: 0 .5rem 1rem rgb(150, 245, 131);
-  
+  font-size: 17px;
 }
-
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  box-shadow: 5px 10px;
-  
+  background-color: #1bec2c;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: black;
-  padding-right: .5rem;
-  padding-left: .5rem;
-  border-radius: .25rem;
-  border: 1px solid transparent;
+  background-color: rgb(248, 244, 247);
 }
 
 /* Style the tab content */
@@ -303,30 +287,19 @@ img {vertical-align: middle;}
 
 /* Fade in tabs */
 @-webkit-keyframes fadeEffect {
-  from {opacity: 5;}
-  to {opacity: 10;}
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 @keyframes fadeEffect {
-  from {opacity: 5;}
-  to {opacity: 10;}
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
-.container-fluid .col-md-6{
-background: black;
-    color: white;
-    padding: 2rem 0rem;
-    height: 100%;
-  }
 
-  #Positive .col-md-3{
-    background: black;
-    
-  }
 
-  #MY GoalZ .container-goal{
- background-repeat:no-repeat ;
-  }
+
+
  
 
 
@@ -376,84 +349,3 @@ element.style {
   border-width: 100px;
 }
 
-#Favourite {
-  background: rgb(193, 230, 198);
-  color: #000000;
-  padding: 2rem 0rem;
-  height: 200%;
-  width: 100%;
-}
-
-/*#favourites .header{
-margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-  }*/
-
-
-
-
-#Favourite .row{
-  display: flex;
-  flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-
-#Favourite .img {
-  height: 200px;
-  width: 200px;
-}
-#Favourite.img-thumbnail {
-  padding: .25rem;
-  background-color: #fff;
-  border: 1px solid #dee2e6;
-  border-radius: .25rem;
-  max-width: 100%;
-  height: auto;
-}
-
-.container-fav .content {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1;
-  width: 88%;
-  padding : 15px;
-  padding-left: 0px;
-  padding-right: unset;
-  padding-bottom: unset;
-  font-family: Arial;
-  font-size: 17px;
-  
-}
-.container-fav{
-  position: relative;
-  max-width:1000px;
-  margin: 0 auto;
-  height: 800px;
-}
-
-
-img:hover {
-  /* Start the shake animation and make the animation last for 0.5 seconds */
-  animation: shake 0.5s;
-
-  /* When the animation is finished, start again */
-  animation-iteration-count: infinite;
-}
-
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
