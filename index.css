@@ -316,7 +316,7 @@ img {vertical-align: middle;}
 background: black;
     color: white;
     padding: 2rem 0rem;
-    height: 100%;
+   
   }
 
   #Positive .col-md-3{
@@ -324,8 +324,9 @@ background: black;
     
   }
 
-  #MY GoalZ .container-goal{
+  #Goals .container-goal{
  background-repeat:no-repeat ;
+ size: 5000px;
   }
  
 
@@ -380,7 +381,7 @@ element.style {
   background: rgb(193, 230, 198);
   color: #000000;
   padding: 2rem 0rem;
-  height: 1000px;
+  height: inherit;
   width: 100%;
 }
 
@@ -400,7 +401,7 @@ margin-block-start: 0.83em;
 }
 
 
-#Favourite .img {
+#Favourite.img-fluid img-thumbnail{
   height: 200px;
   width: 200px;
 }
@@ -421,7 +422,7 @@ margin-block-start: 0.83em;
   color: #f1f1f1;
   width: 88%;
   padding : 15px;
-  padding-left: 0px;
+  padding-left: 10px;
   padding-right: unset;
   padding-bottom: unset;
   font-family: Arial;
