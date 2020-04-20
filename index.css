@@ -17,11 +17,11 @@ html {
 
 }
 .navbar-brand span {
-  color: greenyellow;
+  color: rgb(150, 245, 131);;
   font-weight: 600;
 }
 .navbar-dark .navbar-nav .nav-link {
-  color: greenyellow;
+  color: rgb(150, 245, 131);;
   text-transform: initial;
   
   
@@ -241,12 +241,12 @@ img {vertical-align: middle;}
   background-position: center;
 }*/
 .container-fluid .col-md-6 {
-  height: 705px;
-  
+  height: 500px;
+  font-size: 18px;
   }
   .container-fluid .col-md-3 {
-    height: 705px;
-    
+    height: 800px;
+    font-size: 17px;
     }
 
 
