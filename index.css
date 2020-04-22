@@ -20,11 +20,12 @@ html {
   color: rgb(150, 245, 131);;
   font-weight: 600;
 }
+@media (min-width: 768px){
 .navbar-dark .navbar-nav .nav-link {
   color: rgb(150, 245, 131);;
   text-transform: initial;
   
-  
+} 
 }
 
 img{
@@ -324,9 +325,11 @@ background: black;
     
   }
 
+@media  (min-width: 768px){
   #Goals .container-goal{
  background-repeat:no-repeat ;
  
+}
   }
  
 
@@ -334,13 +337,14 @@ background: black;
 
 
 
-
-#Favourite {
+  @media  (min-width: 768px){
+ #Favourite {
   background: rgb(193, 230, 198);
   color: #000000;
   padding: 2rem 0rem;
   height: fit-content;
   width: 100%;
+ }
 }
 
 /*#favourites .header{
