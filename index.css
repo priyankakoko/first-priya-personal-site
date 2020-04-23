@@ -332,7 +332,23 @@ background: black;
 }
   }
  
+  @media  (min-width: 768px){
+   #Hobby .container-vedio{
+    background-color: rgb(51, 53, 52); 
+    height: 500px;
+    }
+  }
 
+  @media  (min-width: 768px){
+  #About me .container-about{
+    height: inherit;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 20px red inset;
+}
+
+  }
+  }
 
 
 
@@ -351,6 +367,7 @@ background: black;
 margin-block-start: 0.83em;
     margin-block-end: 0.83em;
   }*/
+
 
 
 
